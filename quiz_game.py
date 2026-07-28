@@ -24,11 +24,17 @@ q3 = input("How many planets are in the Solar System? ")
 if q3 == "8":
     score += 1
 
-print("\nQuiz Finished!")
-print(name, ", your final score is", score, "/3")
+q4 = input("What is the largest ocean on Earth? ").lower()
+if q4 == "pacific":
+    score += 1
 
-if score == 3:
+print("\nQuiz Finished!")
+print(name, ", your final score is", score, "/4")
+
+if score == 4:
     print("Excellent! You got all answers correct.")
+elif score == 3:
+    print("Close Win")
 elif score == 2:
     print("Good job!")
 elif score == 1:
